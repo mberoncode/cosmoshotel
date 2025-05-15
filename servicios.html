@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios y Amenities</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="imagenes/faviconn.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Header --> 
+	<header>
+        <a href="index.html" class="logo">
+  <img src="imagenes/logohotel.png" alt="Cosmos Hotel - Inicio">
+</a>
+		
+  <!-- Botón hamburguesa (solo visible en dispositivos móviles) -->
+  <button class="menu-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <ul>
+      <li><a href="habitaciones.html">Habitaciones & Suites</a></li>
+      <li><a href="servicios.html">Servicios & Amenities</a></li>
+      <li><a href="restaurante.html">Restaurante & Bar</a></li>
+      <li><a href="#experiencia">Experiencia Cosmos</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+    </header>
+	
+	<main>
+
+  <!-- Sección 1: Título y descripción -->
+  <section class="intro">
+    <h1>Servicios y Amenities</h1>
+    <p>Descubre una experiencia de lujo diseñada para satisfacer tus necesidades y ofrecerte el máximo confort durante tu estancia.</p>
+  </section>
+
+  <!-- Sección 2: Servicios -->
+  <section class="contenido">
+    <div class="fila">
+      <img src="imagenes/roombreakfast.jpeg" alt="Servicio a la habitación" />
+      <div>
+        <h2>Servicio a la Habitación</h2>
+        <p>Disfruta de deliciosos platillos y bebidas desde la comodidad de tu habitación, disponibles las 24 horas.</p>
+      </div>
+    </div>
+
+    <div class="fila invertido">
+      <div>
+        <h2>Transporte Privado</h2>
+        <p>Viaja con comodidad y seguridad gracias a nuestro servicio de transporte privado disponible bajo reserva.</p>
+      </div>
+		<img src="imagenes/transportepriv.jpeg" alt="Transporte privado" />
+    </div>
+
+    <div class="fila">
+      <img src="imagenes/concierge.jpeg" alt="Servicio de concierge" />
+      <div>
+        <h2>Concierge</h2>
+        <p>Nuestro equipo de concierge está listo para ayudarte a organizar tus actividades, reservas y experiencias locales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Amenities -->
+  <section class="contenido fondo-claro">
+    <div class="fila">
+      <img src="imagenes/sparoom.jpeg" alt="Spa" />
+      <div>
+        <h2>Spa</h2>
+        <p>Relájate con una selección de tratamientos y masajes en nuestro exclusivo spa, diseñado para revitalizar cuerpo y mente.</p>
+      </div>
+    </div>
+
+    <div class="fila invertido">
+      <div>
+        <h2>Gimnasio</h2>
+        <p>Mantén tu rutina de entrenamiento en nuestro gimnasio totalmente equipado con tecnología de última generación.</p>
+      </div> 
+		<img src="imagenes/gimnasio2.jpeg" alt="Gimnasio" />
+    </div>
+
+    <div class="fila">
+      <img src="imagenes/piscinaexternaamen.jpeg" alt="Piscina" />
+      <div>
+        <h2>Piscina</h2>
+        <p>Disfruta de un refrescante baño o relájate junto a nuestra elegante piscina con vista panorámica.</p>
+      </div>
+    </div>
+  </section>
+</main>
+	
+	<!-- Footer --> 
+	
+	<footer class="footer">
+  <div class="footer-column">
+    <h3>Contacto</h3>
+    <p>Email: cosmoshotel@mail.com</p>
+    <p>Tel: +54 11 1234 5678</p>
+    <p>Dirección: Av. Libertador 3333, Ciudad de Buenos Aires</p>
+  </div>
+  <div class="footer-column">
+    <h3>Términos y Condiciones</h3>
+    <p><a href="#">Ver términos</a></p>
+    <p><a href="#">Política de privacidad</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Reservas</h3>
+    <p><a href="#">Haz una reserva</a></p>
+    <p><a href="#">Preguntas frecuentes</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Legal</h3>
+    <p><a href="#">Aviso legal</a></p>
+    <p><a href="#">Cookies</a></p>
+  </div>
+</footer>
+	
+	<script>// Obtener los elementos
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // Agregar un evento de clic al botón hamburguesa
+  menuToggle.addEventListener('click', () => {
+    // Toggle entre mostrar y ocultar el menú
+    menu.classList.toggle('active');
+  });
+	</script>
+</body>
+</html>

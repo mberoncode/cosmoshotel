@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones - Cosmos Hotel</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="imagenes/faviconn.png" type="image/png">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/logohotel.png" alt="Cosmos Hotel - Inicio">
+    </a>
+    <button class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="menu">
+      <ul>
+        <li><a href="habitaciones.html">Habitaciones & Suites</a></li>
+        <li><a href="servicios.html">Servicios & Amenities</a></li>
+        <li><a href="restaurante.html">Restaurante & Bar</a></li>
+        <li><a href="#experiencia">Experiencia Cosmos</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+ <div class="habitaciones-page">
+    <!-- Sección 1: Descripción general -->
+    <section class="descripcion">
+      <div class="container">
+        <h1>Habitaciones & Suites</h1>
+		  <h2><i>Un refugio de tranquilidad y lujo</i></h2>
+        <p>Cada habitación ha sido cuidadosamente diseñada para brindarte una experiencia única. Desde nuestras elegantes suites hasta las acogedoras habitaciones dobles, encontrarás el equilibrio perfecto entre confort, diseño contemporáneo y servicios de alta gama.</p>
+      </div>
+    </section>
+
+<!-- Sección 2: Habitaciones -->
+<section class="habitaciones-section">
+  <div class="container">
+
+    <!-- Suite Principal destacada -->
+    <div class="room destacada">
+      <img src="imagenes/suitepresidencial.jpeg" alt="Suite Principal" class="room-image" />
+      <div class="room-description">
+        <h4>Suite Principal</h4>
+        <p>Amplia y luminosa, la suite ofrece vistas panorámicas, sala de estar privada, baño con acabados de mármol y todo el confort de una estancia de lujo.</p>
+      </div>
+    </div>
+
+    <!-- Habitaciones en grid -->
+    <div class="room-grid">
+      <div class="room">
+        <img src="imagenes/premiumroom.jpg" alt="Habitación Doble" class="room-image" />
+        <div class="room-description">
+          <h4>Habitación Doble</h4>
+          <p>Amplia y cuidadosamente decorada, ofrece el equilibrio perfecto entre confort y funcionalidad. Ideal para quienes valoran el descanso en un entorno moderno y relajado.</p>
+        </div>
+      </div>
+      <div class="room">
+        <img src="imagenes/standarroom.jpeg" alt="Habitación Estándar" class="room-image" />
+        <div class="room-description">
+          <h4>Habitación Estándar</h4>
+          <p>Cómoda y bien equipada, brinda todo lo necesario para una estadía placentera. Su diseño sobrio y cálido crea un ambiente tranquilo y acogedor.</p>
+        </div>
+      </div>
+    </div>
+	      <div class="room-grid">
+      <div class="room">
+        <img src="imagenes/superiorroom.jpg" alt="Habitación Superior" class="room-image" />
+        <div class="room-description">
+          <h4>Habitación Superior</h4>
+          <p>Con más espacio y detalles de categoría, invita a disfrutar de una experiencia elevada. Grandes ventanales, iluminación natural y acabados elegantes marcan la diferencia.</p>
+        </div>
+      </div>
+      <div class="room">
+        <img src="imagenes/deluxeroom.jpeg" alt="Habitación Deluxe" class="room-image" />
+        <div class="room-description">
+          <h4>Habitación Deluxe</h4>
+          <p>Nuestra propuesta más exclusiva: amplitud, diseño sofisticado y amenities premium. Cada rincón está pensado para que vivas el lujo con total comodidad.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  </div>
+  </main>
+<footer class="footer">
+  <div class="footer-column">
+    <h3>Contacto</h3>
+    <p>Email: cosmoshotel@mail.com</p>
+    <p>Tel: +54 11 1234 5678</p>
+    <p>Dirección: Av. Libertador 3333, Ciudad de Buenos Aires</p>
+  </div>
+  <div class="footer-column">
+    <h3>Términos y Condiciones</h3>
+    <p><a href="#">Ver términos</a></p>
+    <p><a href="#">Política de privacidad</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Reservas</h3>
+    <p><a href="#">Haz una reserva</a></p>
+    <p><a href="#">Preguntas frecuentes</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Legal</h3>
+    <p><a href="#">Aviso legal</a></p>
+    <p><a href="#">Cookies</a></p>
+  </div>
+</footer>
+	
+	<script>// Obtener los elementos
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // Agregar un evento de clic al botón hamburguesa
+  menuToggle.addEventListener('click', () => {
+    // Toggle entre mostrar y ocultar el menú
+    menu.classList.toggle('active');
+  });
+	</script>
+</body>
+</html>

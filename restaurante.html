@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante y Bar</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="imagenes/faviconn.png" type="image/png">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+        <a href="index.html" class="logo">
+  <img src="imagenes/logohotel.png" alt="Cosmos Hotel - Inicio">
+</a>
+		
+  <!-- Botón hamburguesa (solo visible en dispositivos móviles) -->
+  <button class="menu-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <ul>
+      <li><a href="habitaciones.html">Habitaciones & Suites</a></li>
+      <li><a href="servicios.html">Servicios & Amenities</a></li>
+      <li><a href="restaurante.html">Restaurante & Bar</a></li>
+      <li><a href="#experiencia">Experiencia Cosmos</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+    </header>
+<main>
+
+  <!-- Sección 1: Introducción -->
+  <section class="intro">
+    <h1>Restaurante y Bar</h1>
+    <p>Sumérgete en una experiencia gastronómica única que combina sabores excepcionales, ambiente sofisticado y un servicio de primer nivel.</p>
+  </section>
+
+  <!-- Sección 2: Restaurante -->
+  <section class="contenido">
+
+    <!-- Restaurante general -->
+    <div class="fila">
+      <img src="imagenes/restaurante1.jpeg" alt="Restaurante temático" />
+      <div>
+        <h2>Astros Restaurant</h2>
+        <p>Nuestro restaurante ofrece una experiencia sensorial inspirada en la cocina internacional, con un menú cuidadosamente diseñado y un ambiente acogedor.</p>
+      </div>
+    </div>
+
+    <!-- Chef -->
+    <div class="bloque-texto">
+      <h3>Chef Ejecutivo</h3>
+      <p>Con una trayectoria internacional y una pasión por la innovación culinaria, nuestro chef transforma ingredientes locales en obras maestras gastronómicas.</p>
+    </div>
+
+    <!-- Menú -->
+    <div class="bloque-texto">
+      <h3>Menú Destacado</h3>
+      <p>Entradas gourmet, platos principales con sabores del mundo y postres artesanales. Ofrecemos opciones vegetarianas, veganas y sin gluten.</p>
+    </div>
+
+    <!-- Ambientación en fotos -->
+    <div class="fila fila">
+      <img src="imagenes/restaurante1.jpeg" alt="Ambientación del restaurante" />
+      <img src="imagenes/barresto.jpeg" alt="Decoración del restaurante" />
+    </div>
+
+    <!-- Horarios y reservas -->
+    <div class="bloque-texto">
+      <h3>Horarios y Reservas</h3>
+      <p>Abierto todos los días de 18:00 a 23:00 hs. Reservas disponibles en recepción o a través de nuestro sistema online.</p>
+    </div>
+
+  </section>
+
+  <!-- Sección 3: Bar -->
+  <section class="contenido fondo-claro">
+	    <div class="contenedor-dos-columnas">
+   
+    <div class="columna-imagenes-superpuestas">
+      <div class="imagen-arriba">
+        <img src="imagenes/bartematico.jpeg" alt="Bar1" />
+      </div>
+      <div class="imagen-abajo">
+        <img src="imagenes/bartematico2.jpeg" alt="Bar2" />
+      </div>
+    </div> 
+	<div class="columna-texto">
+      <h2>Bar Maximus</h2>
+      <p>Ambiente íntimo con música suave, mixología de autor y una carta de bebidas nacionales e internacionales. Nuestra especialidad: cócteles artesanales con ingredientes locales.</p>
+    </div>
+  </div>
+	  
+	  
+    <!-- Carta y horarios -->
+    <div class="bloque-texto">
+      <h3>Carta y Horarios</h3>
+      <p>Aperitivos, cócteles exclusivos, vinos seleccionados y cervezas artesanales. Abierto de 18:00 a 01:00 hs. Música en vivo los fines de semana.</p>
+    </div>
+  </section>
+</main>
+	
+	<footer class="footer">
+  <div class="footer-column">
+    <h3>Contacto</h3>
+    <p>Email: cosmoshotel@mail.com</p>
+    <p>Tel: +54 11 1234 5678</p>
+    <p>Dirección: Av. Libertador 3333, Ciudad de Buenos Aires</p>
+  </div>
+  <div class="footer-column">
+    <h3>Términos y Condiciones</h3>
+    <p><a href="#">Ver términos</a></p>
+    <p><a href="#">Política de privacidad</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Reservas</h3>
+    <p><a href="#">Haz una reserva</a></p>
+    <p><a href="#">Preguntas frecuentes</a></p>
+  </div>
+  <div class="footer-column">
+    <h3>Legal</h3>
+    <p><a href="#">Aviso legal</a></p>
+    <p><a href="#">Cookies</a></p>
+  </div>
+</footer>
+	<script>// Obtener los elementos
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  // Agregar un evento de clic al botón hamburguesa
+  menuToggle.addEventListener('click', () => {
+    // Toggle entre mostrar y ocultar el menú
+    menu.classList.toggle('active');
+  });
+	</script>
+</body>
+</html>
