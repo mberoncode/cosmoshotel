@@ -212,12 +212,15 @@
     <h2>Contacto</h2>
     <p>¿Tenés alguna consulta o querés hablar con nosotros? Estamos a disposición.</p>
     
-    <form class="formulario-contacto">
+   <form class="formulario-contacto" id="formulario-contacto">
       <input type="text" placeholder="Nombre completo" required>
       <input type="email" placeholder="Correo electrónico" required>
       <textarea rows="5" placeholder="Escribí tu mensaje..." required></textarea>
       <button type="submit" class="btn-enviar">Enviar mensaje</button>
     </form>
+  <p id="mensaje-exito" style="display: none; color: green; margin-top: 10px;">
+    ¡Gracias! Tu mensaje fue enviado correctamente.
+  </p>
   </div>
 </section>
   </main>
@@ -291,6 +294,14 @@
     menu.classList.toggle('active');
   });
 	
+// Form contacto
+  document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+    e.preventDefault(); // Evita que se recargue o redirija
+    document.getElementById('mensaje-exito').style.display = 'block'; // Muestra mensaje
+    this.reset(); // Limpia los campos
+  });
+
+
 </script>
 
 
