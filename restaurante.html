@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante y Bar</title>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="lightbox.min.css">
   <link rel="icon" href="imagenes/faviconn.png" type="image/png">
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -67,11 +68,22 @@
       <p>Entradas gourmet, platos principales con sabores del mundo y postres artesanales. Ofrecemos opciones vegetarianas, veganas y sin gluten.</p>
     </div>
 
-    <!-- Ambientación en fotos -->
-    <div class="fila fila">
-      <img src="imagenes/restaurante1.jpeg" alt="Ambientación del restaurante" />
-      <img src="imagenes/barresto.jpeg" alt="Decoración del restaurante" />
-    </div>
+	<!-- Galeria Lightbox Menu -->
+<div class="galeriaresto">
+  <a href="imagenes/wagyubeef.jpg" data-lightbox="menu" title="Wagyu Beef">
+    <img src="imagenes/wagyubeefchico.png" alt="Wagyu Beef">
+  </a>
+  <a href="imagenes/vieirasconespuma.jpg" data-lightbox="menu" title="Vieiras con espuma de limon">
+    <img src="imagenes/vieirasconespumachico.png" alt="Vieiras con espuma de limon">
+  </a>
+  <a href="imagenes/lobsterrisotto.jpg" data-lightbox="menu" title="Risotto de langosta">
+    <img src="imagenes/lobsterrisottochico.png" alt="Risotto de langosta">
+  </a>
+	<a href="imagenes/esferadechocolate.jpg" data-lightbox="menu" title="Esfera de chocolate suizo">
+    <img src="imagenes/esferadechocolatechico.png" alt="Esfera de chocolate suizo">
+  </a>
+</div>
+
 
     <!-- Horarios y reservas -->
     <div class="bloque-texto">
@@ -105,6 +117,22 @@
       <h3>Carta y Horarios</h3>
       <p>Aperitivos, cócteles exclusivos, vinos seleccionados y cervezas artesanales. Abierto de 18:00 a 01:00 hs. Música en vivo los fines de semana.</p>
     </div>
+
+	  <!-- Galeria Lightbox Bar -->
+<div class="galeriaresto">
+  <a href="imagenes/tragodeautor.jpg" data-lightbox="bar" title="Trago de autor">
+    <img src="imagenes/tragodeautorchico.png" alt="Trago de autor">
+  </a>
+  <a href="imagenes/mocktailbotanico.jpg" data-lightbox="bar" title="Mocktail botanico">
+    <img src="imagenes/mocktailbotanicochico.png" alt="Mocktail botanico">
+  </a>
+ <a href="imagenes/negroni.jpg" data-lightbox="bar" title="Negroni">
+    <img src="imagenes/negronichico.png" alt="Negroni">
+  </a>
+	 <a href="imagenes/oldfashioned.jpg" data-lightbox="bar" title="Oldfashioned">
+    <img src="imagenes/oldfashionedchico.png" alt="Oldfashioned">
+  </a>
+</div>
   </section>
 </main>
 	
@@ -131,15 +159,21 @@
     <p><a href="#">Cookies</a></p>
   </div>
 </footer>
-	<script>// Obtener los elementos
+	
+<!-- Primero Lightbox -->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+<!-- Después script personalizado -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu');
 
-  // Agregar un evento de clic al botón hamburguesa
   menuToggle.addEventListener('click', () => {
-    // Toggle entre mostrar y ocultar el menú
     menu.classList.toggle('active');
   });
-	</script>
+});
+</script>
+
 </body>
 </html>
