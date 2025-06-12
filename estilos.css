@@ -35,7 +35,6 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 5px;
 }
 
 .menu a {
@@ -937,6 +936,24 @@ iframe {
   color: #fff;
 }
 
+.footer-wrapper {
+  background-color: #222;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.piedepagina {
+	text-align: center;
+	text-decoration: none;
+    color: #ccc;
+}
+
+
 /* ---------------------------
    Estilos Generales
 ---------------------------- */
@@ -990,6 +1007,7 @@ header {
     box-shadow: none;
     width: 100%;
     box-sizing: border-box;
+	justify-content: flex-end;  
   }
 
   .menu ul {
@@ -1002,7 +1020,7 @@ header {
   }
 
   .menu li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .menu-toggle {
@@ -1042,7 +1060,7 @@ header {
   }
 
   .menu li {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
   }
 
   .menu li a {
@@ -1218,7 +1236,7 @@ header {
   /* === Servicios === */
  .fila {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
   }
