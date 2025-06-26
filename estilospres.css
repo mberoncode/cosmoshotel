@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('pcimg/spacebk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+/* Indice Nav */
+.indice-flotante {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.indice-flotante ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indice-flotante li {
+  margin-bottom: 12px;
+}
+
+.indice-flotante a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.indice-flotante a:hover {
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
+}
+
+
+/* Secciones tipo diapositiva */
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll snap vertical para todo el body */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  font-family: 'Montserrat', sans-serif;
+  background: url('pcimg/spacebk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #1d1d1d;
+}
+
+/* Cada sección ocupa una pantalla y se alinea para scroll snap */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  margin-bottom: 30px;
+}
+
+/* Contenedor con fondo blanco semi-transparente y sombra */
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 35px;
+  border-radius: 16px;
+  max-width: 1000px; /* ajustalo si querés que todos tengan este ancho máximo */
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+
+/* Tipografía para títulos */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Tipografía para textos */
+p, li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Seccion Portada */
+
+.portada .contenedor {
+  height: 90%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 70px;
+}
+
+.portada .logo {
+  width: 200px; /* más grande que antes */
+  max-width: 80%;
+}
+
+.portada h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.portada p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Seccion Introduccion */
+#introduccion .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* espacio entre imagen y texto */
+  height: 100%;
+  text-align: left;
+  padding: 40px 70px;
+}
+
+#introduccion .cuadrotexto {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#introduccion .intro-img-container {
+  flex: 0 0 40%; /* ocupa hasta 40% del ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-pic {
+  max-height: 80vh;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Seccion Identidad */
+#identidad {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.identidad-contenido {
+  width: 90%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px 70px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#identidad .titulo-identidad {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.identidad-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Columna de logos */
+.logo-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-item figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #1d1d1d; /* o el color que combine con tu estilo */
+}
+
+
+/* Colores */
+.visual-col {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.colores-corporativos {
+  display: flex;
+  gap: 20px;
+}
+
+.color-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+/* Tipografías */
+.tipografias {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tipo-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+
+.font-sample-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+
+.tipo-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+
+/* Seccion Diseño */
+.captura-wrapper {
+  text-align: center;
+}
+
+.img-captura {
+  width: 85%;
+  max-width: 800px;
+  display: block;
+  margin: 40px auto 0 auto; /* arriba-auto-derecha-auto */
+  height: auto;
+}
+
+
+
+/* Mostrar solo una imagen según el dispositivo */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+/* Seccion Wireframes */
+/* Galería básica */
+.galeria-wireframes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.galeria-wireframes img.thumb {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.galeria-wireframes img.thumb:hover {
+  transform: scale(1.03);
+}
+
+
+.thumb {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.03);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+  padding: 0 10px;
+  border-radius: 6px;
+}
+
+/* Flechas del lightbox */
+.lightbox-prev, .lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.lightbox-prev {
+  left: 30px;
+}
+
+.lightbox-next {
+  right: 30px;
+}
+
+
+/* Seccion Presupuesto */
+.tabla-presupuesto {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.presupuesto-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  background: white;
+}
+
+.presupuesto-table thead {
+  background-color: #04488e;
+  color: white;
+}
+
+.presupuesto-table th,
+.presupuesto-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.presupuesto-table tbody tr:nth-child(even):not(.categoria):not(.total) {
+  background-color: #f9f9f9;
+}
+
+.presupuesto-table .categoria {
+  background-color: #ececec;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+}
+
+.presupuesto-table .categoria td {
+  padding-top: 1.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: none;
+}
+
+.presupuesto-table .total {
+  background-color: #f0dc81;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.presupuesto-table .total td {
+  text-align: right;
+}
+
+.presupuesto-table .total td:first-child {
+  text-align: left;
+}
+
+
+
+/* Seccion Cierre */
+#cierre {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cierre-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.mensaje-final {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.boton-final {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.boton-final:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+
+/* Imagen flotante centrada */
+.visual img, .wireframes img, .comparacion img, .presupuesto-img,  {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: auto;
+    height: auto;
+    scroll-snap-align: none;
+  }
+
+  #identidad,
+  #cierre {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contenedor {
+    padding: 20px 15px;
+    margin: 10px auto;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+
+  .visual img,
+  .wireframes img,
+  .comparacion img {
+    max-width: 90%;
+  }
+
+  /* S1 Intro Adaptable */
+  #introduccion .contenedor {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #introduccion .cuadrotexto,
+  #introduccion .intro-img-container {
+    flex: unset;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #introduccion .cuadrotexto {
+    order: 1;
+  }
+
+  #introduccion .intro-img-container {
+    order: 2;
+  }
+
+  .intro-pic {
+    max-width: 90%;
+    max-height: 50vh;
+    margin: 0 auto;
+  }
+
+  /* S2 Identidad Adapt */
+  .identidad-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos-col,
+  .visual-col {
+    flex: 1 1 100%;
+  }
+
+  .logo-brand {
+    width: 120px;
+  }
+
+  .color-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* S3 Diseño Adapt */
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  /* Galería Adapt */
+  .galeria-wireframes {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Tabla Presupuesto */
+  .presupuesto-table {
+    font-size: 0.9rem;
+  }
+
+  .presupuesto-table th,
+  .presupuesto-table td {
+    padding: 10px 12px;
+  }
+
+}
